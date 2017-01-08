@@ -226,7 +226,6 @@
     map.addMarker({
         lat: 41.035153,
         lng: 0.848941,
-        verticalAlign: 'top',
         title: 'Ubicació de l\'esglèsia',
         infoWindow: {
             content: '<div class="note"><b>La Ermita:</b></div><h4 class="map-title script">Santa Marina</h4>'
@@ -234,7 +233,7 @@
     });
 
     /*display marker 1 address on load */
-    google.maps.event.trigger(map.markers[0], 'click');
+    //google.maps.event.trigger(map.markers[0], 'click');
 	}
 
 	var gmapsRestaurant = function() {
@@ -250,7 +249,6 @@
     map.addMarker({
         lat: 41.060080,
         lng: 1.037228,
-        verticalAlign: 'top',
         title: 'Ubicació del restaurant',
         infoWindow: {
             content: '<div class="note"><b>El restaurant:</b></div><h4 class="map-title script">El Dorado</h4>'
@@ -258,7 +256,7 @@
     });
 
     /*display marker 1 address on load */
-    google.maps.event.trigger(map.markers[0], 'click');
+    //google.maps.event.trigger(map.markers[0], 'click');
 	}
 
 	$(function(){
