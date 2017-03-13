@@ -228,7 +228,7 @@
         lng: 0.848941,
         title: 'Ubicació de l\'esglèsia',
         infoWindow: {
-            content: '<div class="note"><b>La Ermita:</b></div><h4 class="map-title script">Santa Marina</h4>'
+            content: '<div class="note"><b>L\'Ermita:</b></div><h4 class="map-title script">Santa Marina</h4>'
         }
     });
 
@@ -259,7 +259,18 @@
     //google.maps.event.trigger(map.markers[0], 'click');
 	}
 
+	var topbarLinks = function(){
+    $('ul.navigation-links').on('click', 'a', function(e) {
+			alert('dew')
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+    });
+	}
+
 	$(function(){
+		alert('ei')
 		mobileMenuOutsideClick();
 		parallax();
 		offcanvasMenu();
@@ -273,5 +284,7 @@
 		counterWayPoint();
 		gmapsEsglesia();
 		gmapsRestaurant();
+		topbarLinks();
+		alert('hola')
 	});
 }());
