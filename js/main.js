@@ -259,9 +259,8 @@
     //google.maps.event.trigger(map.markers[0], 'click');
 	}
 
-	var topbarLinks = function(){
+	var topbarLinks = function() {
     $('ul.navigation-links').on('click', 'a', function(e) {
-			alert('dew')
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top
@@ -270,7 +269,6 @@
 	}
 
 	$(function(){
-		alert('ei')
 		mobileMenuOutsideClick();
 		parallax();
 		offcanvasMenu();
@@ -285,6 +283,5 @@
 		gmapsEsglesia();
 		gmapsRestaurant();
 		topbarLinks();
-		alert('hola')
 	});
 }());
